@@ -5,9 +5,10 @@ import blob2 from "../images/blob2.png"
 import arrow from "../images/arrow.svg"
 import grouperText from "../images/GROUPER.png"
 import { motion } from "framer-motion";
+import bunchofpeople from "../images/bunchofpeople.png"
 
 export default function Landing() {
-
+    const contentA = ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, aut!", "hi", "ok"];
 
     return (
         <>
@@ -32,16 +33,16 @@ export default function Landing() {
                 </motion.div>
                 <div className="cards">
                     <LandingCard
-                        graphic=""
-                        content="The first groupmaking platform featuring swipe technology. Simplify group formation for attendees."
+                        graphic={bunchofpeople}
+                        content={contentA}
                     />
                     <LandingCard
-                        graphic=""
-                        content=""
+                        graphic={bunchofpeople}
+                        content={contentA}
                     />
                     <LandingCard
-                        graphic=""
-                        content=""
+                        graphic={bunchofpeople}
+                        content={contentA}
                     />
                 </div>
             </div>
