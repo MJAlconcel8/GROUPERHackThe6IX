@@ -10,7 +10,7 @@ The purpose of the project is to allow people to form a team/network with other 
 
 
 # Inspirations
-The inspiration we got from making this project was contributed to the group formation from hackthe6ix. As this event was for the most part online, it was difficult for many individuals to find a team that met their hackathon team expectations. There are many hackers who are beginners and wanted people with around the same expereience as them. There were others who participated in many hackathons and wanted group memebers with plenty of expeience. With Grouper, the team formation problem would not exist, as the individual could filter what they prioritize in an ideal teammate and create their dream team to win Hackthe6ix.
+The inspiration we got from making this project was contributed to the group formation from Hackthe6ix. As this event was for the most part online, it was difficult for many individuals to find a team that met their hackathon team expectations. There are many hackers who are beginners and wanted people with around the same expereience as them. There were others who participated in many hackathons and wanted group memebers with plenty of expeience. With Grouper, the team formation problem would not exist, as the individual could filter what they prioritize in an ideal teammate and create their dream team to win Hackthe6ix.
 
 
 # Screenshots
