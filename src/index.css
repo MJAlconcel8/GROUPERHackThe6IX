@@ -16,6 +16,7 @@
 }
 
 .main-text {
+    margin-top: 150px;
 	font-family: "Open Sans";
 	color: #ce2457;
 	font-weight: 400;
@@ -23,7 +24,8 @@
     width: 890px;
     line-height: 88.9%;
     text-align: center;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 }
 
@@ -32,9 +34,8 @@
 }
 
 .text-logo {
-	font-family: "Nunito";
-	font-size: 49px;
-    color: linear-gradient(88.91deg, #CE4257 0.01%, #FF9B54 122.14%);
+    margin-left: 35px;
+    margin-top: 15px;
 }
 
 .gradient-container {
@@ -103,4 +104,9 @@
     position: absolute;
     left: 1700px;
     z-index: 1;
+}
+
+.get-started-button-content {
+    display: flex;
+    gap: 5px;
 }
