@@ -3,3 +3,8 @@
     margin: 0;
     padding: 0;
 }
+
+.web-header {
+    height: 24px;
+    background: linear-gradient(270deg, #CE2457 20.26%, #FF9B54 52.69%, #720026 88.12%);
+}
