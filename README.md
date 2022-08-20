@@ -2,8 +2,15 @@
 
 # Purpose of Project
 
-# How Project Was Built 
+
+# How Project Was Built? 
+
+# How Does it Work?
+
 
 # Inspirations
+
+
+
 
 # Screenshots
