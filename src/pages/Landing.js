@@ -11,7 +11,7 @@ export default function Landing() {
     const contentA = ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, aut!", "hi", "ok"];
 
     return (
-        <>
+        <div className="wrapper">
             <div className="gradient-container"></div>
             <div className="web-header"></div>
             <img src={blob1} alt="blob" className="blob1" />
@@ -46,6 +46,6 @@ export default function Landing() {
                     />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
