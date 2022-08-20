@@ -1,10 +1,112 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-style: normal;
 }
 
 .web-header {
-    height: 24px;
-    background: linear-gradient(270deg, #CE2457 20.26%, #FF9B54 52.69%, #720026 88.12%);
+	height: 24px;
+	background: linear-gradient(
+		270deg,
+		#ce2457 20.26%,
+		#ff9b54 52.69%,
+		#720026 88.12%
+	);
+}
+
+.main-text {
+    margin-top: 150px;
+	font-family: "Open Sans";
+	color: #ce2457;
+	font-weight: 400;
+	font-size: 78px;
+    width: 890px;
+    line-height: 88.9%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.text-logo {
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+.gradient-container {
+	position: fixed;
+	bottom: 0px;
+	background: linear-gradient(
+		180deg,
+		rgba(217, 217, 217, 0) 0%,
+		rgba(245, 201, 169, 0.54) 75.83%
+	);
+	height: 190px;
+	width: 100%;
+}
+
+.get-start-button {
+	background: linear-gradient(180deg, #ce2457 0%, #ff9b54 98.23%);
+	box-shadow: 2.6735px 2.6735px 4.01024px rgba(79, 0, 11, 0.25);
+	border-radius: 8.93155px;
+	width: 220px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.get-start-but-text {
+	font-family: "Nunito";
+	color: #ffffff;
+	font-weight: 800;
+	font-size: 17px;
+	line-height: 110.89%;
+	letter-spacing: 0.055em;
+}
+
+.get-started-button-content {
+	height: 18.85px;
+}
+
+.landing-card {
+	background: #ffffff;
+	box-shadow: 0px 6.72489px 9.52693px rgba(79, 0, 11, 0.25);
+	border-radius: 13.4498px;
+    width: 385px;
+    height: 250px;
+}
+
+
+.cards {
+    display: flex;
+    gap: 20px;
+    z-index: 2;
+    margin: 0 auto;
+    width: 1192px;
+}
+
+.blob1 {
+    position: absolute;
+    top: 500px;
+    overflow: none;
+    z-index: 1;
+}
+
+.blob2 {
+    position: absolute;
+    left: 1700px;
+    z-index: 1;
+}
+
+.get-started-button-content {
+    display: flex;
+    gap: 5px;
 }
