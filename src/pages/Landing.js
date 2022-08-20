@@ -6,10 +6,21 @@ import arrow from "../images/arrow.svg"
 import grouperText from "../images/GROUPER.png"
 import { motion } from "framer-motion";
 import bunchofpeople from "../images/bunchofpeople.png"
+import { UserAuth } from "../context/AuthContext.js";
+
 
 export default function Landing() {
+    
+    const { googleSignIn } = UserAuth();
     const contentA = ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, aut!", "hi", "ok"];
 
+    const handleGoogleSignIn = async () => {
+        try {
+            await googleSignIn();
+        } catch (error) {
+            console.log(error)
+        }
+    }
     return (
         <>
             <div className="gradient-container"></div>
@@ -25,6 +36,7 @@ export default function Landing() {
                 <motion.div 
                     className="get-start-button"
                     whileHover={{ scale: 1.2 }}
+                    onClick={handleGoogleSignIn}
                 >
                     <div className="get-started-button-content">
                         <p className="get-start-but-text">GET STARTED</p>
