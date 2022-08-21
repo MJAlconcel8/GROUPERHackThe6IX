@@ -1,3 +1,6 @@
+/* -------------------------
+----- GLOBAL STYLES -------- 
+------------------------- */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -56,6 +59,9 @@
 	z-index: -50;
 }
 
+/* -------------------------
+----- LANDING PAGE --------- 
+------------------------- */
 .get-start-button {
 	background: linear-gradient(180deg, #ce2457 0%, #ff9b54 98.23%);
 	box-shadow: 2.6735px 2.6735px 4.01024px rgba(79, 0, 11, 0.25);
@@ -88,6 +94,11 @@
 	border-radius: 13.4498px;
 	width: 385px;
 	height: 250px;
+	display: block;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	color: #720026;
 }
 
 .cards {
@@ -117,13 +128,6 @@
 	gap: 5px;
 }
 
-.landing-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
 .card-text {
 	font-weight: 400;
     font-family: 'Nunito';
@@ -132,6 +136,17 @@
     width: 200px;
 }
 
-.card-image {
+.card-image{
     margin-top: 25px;
+}
+
+.carousel .carousel-indicators button {
+	background-color: #CE2457;
+}
+
+.carousel .carousel-caption {
+	color: #CE2457;
+	line-height: 1.2em;
+	font-size: 1.1em;
+	padding: 0.5em;
 }

@@ -1,11 +1,10 @@
-
 import LandingCard from "../components/LandingCard.js";
 import blob1 from "../images/blob1.png";
 import blob2 from "../images/blob2.png"
 import arrow from "../images/arrow.svg"
 import grouperText from "../images/GROUPER.png"
 import { motion } from "framer-motion";
-import bunchofpeople from "../images/bunchofpeople.png"
+import bunchofpeople from "../images/bunchofpeople.png";
 
 export default function Landing() {
     const contentA = ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, aut!", "hi", "ok"];
