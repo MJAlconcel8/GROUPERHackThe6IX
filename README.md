@@ -5,8 +5,16 @@ Our group decided to make a web application called "Grouper."
 The purpose of the project is to allow people to form a team and network with other people based on similar personalities, characteristics, and experiences in life. Many people in society find it difficult to have social interactions with others due to many barriers such as location or compatibility. Grouper will definitely allow the user to find someone that matches their likes and interests which in turn, will create those connections that every human being needs.
 
 # How Project Was Built? 
+Languages: Html, CSS, and Javascript
+
+Environment: Node.js
+
+Frameworks: Bootstrap, React
+
+Back-end Service: Firebase(Authentication, database)
 
 # How Does it Work?
+Thw user will be greeted with the a landing page that sucessfully adverties Grouper. The user can then click a get started button to register their account via Google. After registration is complete, the user is welcomed with an empty dashboard. In the top right corner, the user is able to join many different events. Once an event is added, it will appear in the user's dashboard. When the user clicks on their added event, it will lead them into a page, where it has an announcement tab to keep them update on the event, a button to find a group or in Grouper terminology "Groupe", and a tab that shows what "Groupes" they are in. User's can form their "Groupe", by swiping right as a match or left as not a match. The user can see whether they mesh with the person, as their is a breif description of what the person is like. If the user found a match, they can talk to the person, to make further decided if they want to be in a "Groupe." The user can also create an event as an adminstrator. As adminstrator, the user can name the event, set a duration for the event, colour background, and their is a feature that auto groups people together. There is also a setting page that allows the user to update their personal information such as name, last name, username, password, and notification settings.      
 
 
 # Inspirations
@@ -14,6 +22,14 @@ The inspiration we got from making this project was contributed to the group for
 
 
 # Screenshots
+![Screenshot (30)](https://user-images.githubusercontent.com/109438699/185785261-50745104-2ea8-46d0-a7ec-4767c0d7422d.png)
+![Screenshot (31)](https://user-images.githubusercontent.com/109438699/185785572-328dc69e-6603-495b-9f7c-f1437a1b7fde.png)
+
+
+
+
+
+
 
 ## Available Scripts
 
