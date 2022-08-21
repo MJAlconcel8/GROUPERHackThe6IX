@@ -10,6 +10,7 @@ import { UserAuth } from "../context/AuthContext.js";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom" 
 
+
 export default function Landing() {
     
     const { googleSignIn, user } = UserAuth();

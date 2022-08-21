@@ -17,8 +17,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
+const app = initializeApp(firebaseConfig);
 const db = getFirestore()
 export const colRef = collection(db, 'events');
-const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 
