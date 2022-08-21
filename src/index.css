@@ -679,3 +679,15 @@ img {
 	display: flex;
 	justify-content: center;
 }
+
+.your-message {
+	width: 230px;
+	height: 50px;
+	padding-top: 5px;
+	font-size: 25px;
+	color: black;
+	background-color: lightblue;
+	border-radius: 19px 20px 0px;
+	padding-left: 15px;
+	margin-left: 260px;
+}
