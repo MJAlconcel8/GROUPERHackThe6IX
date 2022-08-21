@@ -544,3 +544,17 @@ img {
 .event-card {
 	cursor: pointer;
 }
+
+.swipe-container {
+	display: flex;
+	justify-content: center;
+}
+
+.arrows { 
+	height: 1px;
+}
+
+.yes-no-buttons {
+	display: flex;
+	justify-content: center;
+}

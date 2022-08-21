@@ -7,6 +7,7 @@ import EventForm from "./pages/EventForm";
 import JoinEvent from "./pages/JoinEvent";
 import Hackpage from "./pages/HackThe6ix";
 import MatchChat from "./pages/MatchesChat";
+import Swipey from "./pages/Swipey";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             {/* <Route path="/joinevent" element={<JoinEvent />} /> */}
             <Route path="/Hackthe6ix" element={<Hackpage />} />
             <Route path="/matcheschat" element={<MatchChat />} />
+            <Route path="/matchfinder" element={<Swipey />} />
           </Routes>
         </AuthContextProvider >
       </BrowserRouter>
