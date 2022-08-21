@@ -1,4 +1,3 @@
-
 import LandingCard from "../components/LandingCard.js";
 import blob1 from "../images/blob1.png";
 import blob2 from "../images/blob2.png"
@@ -9,7 +8,6 @@ import bunchofpeople from "../images/bunchofpeople.png"
 import { UserAuth } from "../context/AuthContext.js";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom" 
-
 
 export default function Landing() {
     
