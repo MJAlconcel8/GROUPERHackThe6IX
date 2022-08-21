@@ -23,7 +23,7 @@ export default function Navbar() {
                 <p className="username">{user.displayName}</p>
                 <img src={dropdownMenu} alt="dropdownMenu" className="dropdown" onClick={handleDropdownClick} />
             </div>
-            <div className="dropdown-menu">
+            <div className="dropdown-menuu">
                 {displayDropdown && <DropdownMenu />}
             </div>
         </div>
