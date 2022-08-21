@@ -7,7 +7,7 @@ export default function DropdownMenu() {
                 <p className="logout">Log Out</p>
             </div>
             <div className="settings">
-                <p className="settings">Settings</p>
+                <p className="settings">Join an Event</p>
             </div>
         </div>
     )
