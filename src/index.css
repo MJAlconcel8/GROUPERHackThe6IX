@@ -215,6 +215,7 @@
 	font-family: "Nunito";
 	font-weight: 300;
 	margin: auto 0.8em;
+	cursor: pointer;
 }
 
 .event-card {
@@ -526,4 +527,8 @@ img {
 .icon-random {
 	height: 151px;
 	width: 151px;
+}
+
+.event-card {
+	cursor: pointer;
 }
