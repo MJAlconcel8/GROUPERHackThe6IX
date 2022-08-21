@@ -14,6 +14,7 @@ export default function Navbar() {
         setDisplayDropdown(prevDisplayDropdown => !prevDisplayDropdown);
     }
 
+
     return (
         <div className="navbar">
             <motion.img src={hamburgerMenu} alt="hamburgerMenu" whileHover={{ rotate: 90 }} />

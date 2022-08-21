@@ -5,13 +5,20 @@ import AnnouncementBlock from "../images/AnnouncementBlock.png";
 import MatchedGroupiesBlock from "../images/MatchedGroupiesBlock.png";
 import FindGroupieBut from "../images/FindGroupieBut.png";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom" 
 
 export default function Hackpage() {
+
+    const navigate = useNavigate();
+
+    function handleBack() {
+        navigate('/homepage');
+    }
 
     return (
         <>
             <Navbar />
-            <img src={BackButton} alt="" className="back-button" />
+            <img src={BackButton} alt="" className="back-button" onClick={handleBack}/>
             <div className="hack-content">
                 <img src={HeaderGroupie} alt="Header" className="Groupie-Header" />
             </div>
