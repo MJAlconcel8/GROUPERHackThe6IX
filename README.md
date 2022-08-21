@@ -20,6 +20,8 @@ Thw user will be greeted with the a landing page that sucessfully adverties Grou
 # Inspirations
 The inspiration we got from making this project was contributed to the group formation from Hackthe6ix. As this event was for the most part online, it was difficult for many individuals to find a team that met their hackathon team expectations. There are many hackers who are beginners and wanted people with around the same experience as them. There were others who participated in many hackathons and wanted group members with plenty of experience. With Grouper, the team formation problem would not exist, as the individual could filter what they prioritize in an ideal teammate and create their dream team to win Hackthe6ix.
 
+
+
 #Figma Link
 https://www.figma.com/file/T7henoySPSp637TOdNfO28/Grouper?node-id=0%3A1
 
