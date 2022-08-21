@@ -4,6 +4,8 @@ import { AuthContextProvider } from "./context/AuthContext";
 import Homepage from "./pages/Homepage";
 import Protected from "./components/Protected";
 import EventForm from "./pages/EventForm";
+import JoinEvent from "./pages/JoinEvent";
+import Hackpage from "./pages/HackThe6ix";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/homepage" element={<Protected ><Homepage /></Protected>} />
             <Route path="/createevent" element={<EventForm />} />
+            {/* <Route path="/joinevent" element={<JoinEvent />} /> */}
+            <Route path="/Hackthe6ix" element={<Hackpage />} />
           </Routes>
         </AuthContextProvider >
       </BrowserRouter>

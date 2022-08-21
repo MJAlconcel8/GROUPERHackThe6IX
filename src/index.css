@@ -308,3 +308,37 @@
 	font-size: 1.1em;
 	padding: 0.5em;
 }
+
+.dropdown-item:hover {
+	color:#CE2457;
+	cursor: pointer;
+}
+
+.hack-content {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.back-button {
+	position: absolute;
+	left: 150px;
+	top: 150px;
+}
+
+.hack-blocks {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.second-column-groupie {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+img {
+	cursor: pointer;
+}
