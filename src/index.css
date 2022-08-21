@@ -458,7 +458,6 @@
 .dropdown-menuu {
 	position: relative;
 	display: inline-block;
-
 }
 
 .dropdownMenu {
@@ -522,6 +521,19 @@
 
 img {
 	cursor: pointer;
+}
+
+.events {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 25px 25px;
+}
+
+.events-logo {
+	width: 6.125em;
+	height: 6.125em;
+	margin: 18px 38px 18px auto;
 }
 
 .icon-random {
