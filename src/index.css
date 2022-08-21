@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 	font-style: normal;
+	font-family: "Nunito";
 }
 
 .wrapper {
@@ -238,7 +239,7 @@
 	margin-right: 45px;
 }
 
-.event-decription {
+.event-description {
 	margin: 25px 30px;
 	width: 443px;
 }
@@ -252,4 +253,184 @@
 	width: 145px;
 	background: #e9e9e9;
 	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
+}
+
+/* ------------------------
+------ CREATE EVENT -------
+------------------------ */
+.red {
+	color: #CE2457;
+}
+
+.cre-event-container {
+	display: grid;
+	grid-template-columns: 250px auto 481px;
+	grid-template-rows: 81px auto 182px;
+	grid-template-areas: 
+		"lmargin tmargin banner"
+		"lmargin main banner"
+		"lmargin bmargin banner";
+}
+
+.event-form-content {
+	grid-area: main;
+}
+
+.back-button {
+	display: flex;
+	align-items: center;
+}
+
+.back-button p {
+	margin-right: 0.25em;
+	font-weight: 500;
+}
+
+.event-form-content h1{
+	font-size: 82px;
+}
+
+.cre-event-deets {
+	display: grid;
+	grid-template-columns: 400px auto 145px;
+	/* 580px wide 315px tall */
+	grid-template-rows: 60px auto 125px;
+	grid-template-areas: 
+		"eventname space picture"
+		"maxmembers space picture"
+		"eventdesc eventdesc eventdesc";
+	margin-right: 150px;
+}
+
+.input-event-name {
+	grid-area: eventname;
+}
+
+.form-header {
+	margin-bottom: 0.5em;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.chosen-event-name {
+	width: 401px;
+	height: 35px;
+	background: #E9E9E9;
+	border:none;
+    box-shadow: 2px 2px 3px rgb(79 0 11 / 25%);
+    border-radius: 5px;
+	padding: 0.25em 1em;
+}
+
+.team-max-member-input {
+	grid-area: maxmembers;
+	display: flex;
+	margin-top: 1.4em; 
+}
+
+.team-max-member-input p {
+	margin-right: 2em;
+}
+
+.max-members {
+	width: 51.92px;
+    height: 28px;
+	border: none;
+    background: #E9E9E9;
+    box-shadow: 2px 2px 3px rgb(79 0 11 / 25%);
+    border-radius: 5px;
+}
+
+.icon-upload {
+	grid-area: picture;
+}
+
+.event-description-box {
+	grid-area: eventdesc;
+}
+
+.event-description-box textarea {
+	width: 100%;
+    height: 120px;
+	border: none;
+    background: #E9E9E9;
+    box-shadow: 2px 2px 3px rgb(79 0 11 / 25%);
+    border-radius: 5px;
+}
+
+.select-background-color {
+	margin-top: 50px;
+	display: flex;
+}
+
+.select-background-color h4 {
+	margin-right: 2em;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.start-end-date {
+	display: grid;
+	grid-template-columns: 208px auto auto 251px;
+	grid-template-rows: 40px;
+	grid-template-areas: 
+		"datetag startdate enddate autogroup";
+	margin: 20px 0 50px;
+}
+
+.datetag {
+	grid-area: datetag;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.start-date {
+	grid-area: startdate;
+}
+
+.start-date input,
+.end-date input {
+	background: #E9E9E9;
+	border: none;
+    box-shadow: 2px 2px 3px rgb(79 0 11 / 25%);
+    border-radius: 5px;
+	padding: 0.5em 0.5em 0.5em 0.8em;
+	margin-top: 0.25em;
+}
+
+.end-date {
+	grid-area: enddate;
+}
+
+.auto-group {
+	display: flex;
+	grid-area: autogroup;
+	font-size: 0.8em;
+	align-items: center;
+}
+
+.auto-group input {
+	margin-right: 0.8em;
+}
+
+.side-bnr-img {
+	grid-area: banner;
+    z-index: -100;
+}
+
+.submit-event-button {
+	background: linear-gradient(180deg, #ce2457 0%, #ff9b54 98.23%);
+	box-shadow: 2.6735px 2.6735px 4.01024px rgba(79, 0, 11, 0.25);
+	border-radius: 20px;
+	width: 190px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 70px;
+	color: #fff;
+}
+
+.submit-event-button p {
+	margin: auto 0.8em;
 }
