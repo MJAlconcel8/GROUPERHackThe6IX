@@ -14,6 +14,7 @@ Frameworks: Bootstrap, React
 Back-end Service: Firebase(Authentication, database)
 
 # How Does it Work?
+Thw user will be greeted with the a landing page that sucessfully adverties Grouper. 
 
 
 # Inspirations
