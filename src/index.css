@@ -145,6 +145,7 @@
 
 .card-image{
     margin-top: 25px;
+}
 
 .navbar {
 	display: flex;
@@ -272,6 +273,7 @@
 	background-color: #FF9042;
 	width: 145px;
 	height: 100px;
+}
 
 .carousel .carousel-indicators button {
 	background-color: #CE2457;
