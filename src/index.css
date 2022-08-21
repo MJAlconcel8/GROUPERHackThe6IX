@@ -108,7 +108,7 @@
 .blob2 {
 	position: absolute;
 	top: -94px;
-    right: 0;
+	right: 0;
 	z-index: -100;
 }
 
@@ -118,20 +118,46 @@
 }
 
 .landing-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
 }
 
 .card-text {
 	font-weight: 400;
-    font-family: 'Nunito';
+	font-family: "Nunito";
 	font-size: 24;
-    color: #CE2457;
-    width: 200px;
+	color: #ce2457;
+	width: 200px;
 }
 
 .card-image {
-    margin-top: 25px;
+	margin-top: 25px;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 100px;
+	padding-bottom: 15px;
+	background: rgba(255, 255, 255, 0.01);
+	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
+}
+
+.user {
+	display: flex;
+}
+
+.dropdown {
+	height: 10px;
+}
+
+.profile-pic {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
 }

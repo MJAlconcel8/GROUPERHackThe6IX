@@ -19,6 +19,7 @@ export default function Landing() {
     const handleGoogleSignIn = async () => {
         try {
             await googleSignIn();
+            console.log(user);
         } catch (error) {
             console.log(error)
         }
@@ -27,6 +28,7 @@ export default function Landing() {
     useEffect(() => {
         if (user != null) {
             navigate('/homepage');
+            console.log(user);
         }
     }, [user]);
 

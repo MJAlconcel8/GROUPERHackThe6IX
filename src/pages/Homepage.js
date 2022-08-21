@@ -1,4 +1,5 @@
 import { UserAuth } from "../context/AuthContext"
+import Navbar from "../components/Navbar"
 
 export default function Homepage() {
 
@@ -14,6 +15,7 @@ export default function Homepage() {
 
     return (
         <>
+            <Navbar />
             <h1 onClick={handleSignOut}>Hello World</h1>
         </>
 
