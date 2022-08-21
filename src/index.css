@@ -151,16 +151,20 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 20px;
-	padding-left: 50px;
-	padding-right: 100px;
-	padding-bottom: 15px;
+	padding: 20px 50px 15px;
 	background: rgba(255, 255, 255, 0.01);
 	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
 }
 
+.grouper-logo {
+	margin-left: 8em;
+}
+
 .user {
 	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-right: -13em;
 }
 
 .dropdown {
@@ -202,9 +206,14 @@
 	font-family: "Nunito";
 }
 
+.add-event-text {
+	margin: 0;
+}
+
 .username {
 	font-family: "Nunito";
 	font-weight: 300;
+	margin: auto 0.8em;
 }
 
 .event-card {
@@ -228,7 +237,7 @@
 
 .card-titles {
 	color: white;
-	margin-left: 20px;
+	margin-left: 30px;
 	padding-top: 55px;
 }
 
@@ -249,7 +258,7 @@
 	margin-right: 45px;
 }
 
-.event-decription {
+.event-description {
 	margin: 25px 30px;
 	width: 443px;
 }
@@ -265,14 +274,28 @@
 	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
 }
 
-.dropdown-menu {
-	position: absolute;
+.dropdown-menuu {
+	position: relative;
+	display: inline-block;
+
 }
 
 .dropdownMenu {
+	position: absolute;
+	top: 50px;
+	right: 120px;
 	background-color: #FF9042;
-	width: 145px;
+	color: white;
+	width: 165px;
 	height: 100px;
+	border-radius: 10px;
+	text-align: center;
+	margin-right: 60px;
+	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
+}
+
+.dropdownMenu p {
+	margin-top: 1em;
 }
 
 .carousel .carousel-indicators button {

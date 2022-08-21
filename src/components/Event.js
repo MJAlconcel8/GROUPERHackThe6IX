@@ -23,7 +23,7 @@ export default function Event(props) {
                 </div>
                 <div className="event-logo" style={{ backgroundImage: `url("https://via.placeholder.com/500")` }} ></div>
             </div>
-            <div className="event-decription">{props.description}</div>
+            <div className="event-description">Come join this fantastic 36 hour long event to test or acquire a new programming skill or framework in a motivating and focused setting.</div>
         </motion.div >
 
     )
