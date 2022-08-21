@@ -42,7 +42,7 @@ export default function Homepage() {
                     <Event 
                         eventtitle="Hack The 6ix"
                         members="880"
-                        description="Come join this fantastic 36 hour long event to test or aquire a new programming skill or framework in a motivating and focused setting."
+                        description="Come join this fantastic 36 hour long event to test or acquire a new programming skill or framework in a motivating and focused setting."
                         logo={Computer}
                         color="#FF8888"
                     />
@@ -56,7 +56,7 @@ export default function Homepage() {
                     <Event 
                         eventtitle="Finance Group Project"
                         members=" 600"
-                        description="Today’s industry is moving towards exciting changes. The goal of the project is to find intutive ways to help others become finacially literate and understand society."
+                        description="Today\’s industry is moving towards exciting changes. The goal of the project is to find intuitive ways to help others become financially literate and understand society."
                         logo={Business}
                         color="#CE2457"
                     />
