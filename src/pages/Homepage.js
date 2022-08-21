@@ -20,7 +20,6 @@ export default function Homepage() {
     return (
         <>
             <Navbar />
-            <h1 onClick={handleSignOut}>Hello World</h1>
             <div className="homepage-content">
                 <div className="home-top-row">
                     <h1 onClick={handleSignOut} className="enjoy">Enjoy Your Social Interactions With Grouper!</h1>
