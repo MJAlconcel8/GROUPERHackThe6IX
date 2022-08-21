@@ -545,6 +545,126 @@ img {
 	cursor: pointer;
 }
 
+.matcheschat-content {
+	display: grid;
+	grid-template-columns: 250px 1fr 1fr 250px;
+	grid-template-rows: 53px auto 120px;
+	grid-template-areas: 
+		"lmargin tmargin tmargin rmargin"
+		"lmargin leftbody rightbody rmargin"
+		"lmargin bmargin bmargin rmargin";
+}
+
+.matched-deets-summary {
+	grid-area: leftbody;
+	margin-top: 30px;
+}
+
+.matched-deets-summary .matched-caption {
+	font-size: 24px;
+	line-height: 10px;
+}
+
+.matched-deets-summary .matched-name {
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 53px;
+	margin-bottom: 15px;
+}
+
+.matched-deets-summary .matched-profile-pic {
+	width: 20.31em;
+	height: 20.31em;
+}
+
+.more-matches-btn {
+	display: flex;
+	text-transform: uppercase;
+	font-weight: 600;
+	align-items: center;
+	margin-top: 183px;
+}
+
+.more-matches-btn p {
+	margin: 0 0.25em 0 0;
+}
+
+.chat-area {
+	grid-area: rightbody;
+	width: 578px;
+	height: 688px;
+	background: #000000;
+	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
+	border-radius: 20px;
+	color: #fff;
+}
+
+.chat-bg {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(153.58deg, rgba(255, 155, 84, 0.6) 0.67%, rgba(206, 36, 87, 0.6) 40.76%, rgba(255, 155, 84, 0.6) 73.11%, rgba(206, 36, 87, 0.6) 111.58%);
+	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
+	border-radius: 20px;
+}
+
+.other-chat-member {
+	margin-left: 42px;
+}
+
+.other-chat-member .chat-cta {
+	padding-top: 37px;
+	margin-bottom: 0;
+}
+
+.other-chat-member .matched-name-chat {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 49px;
+	text-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
+}
+
+.other-chat-member .matched-person-chat .profile-pic {
+	width: 3.125em;
+	height: 3.125em;
+	margin-right: 1em;
+}
+
+.user-chat-box {
+	margin-left: 42px;
+	position: absolute;
+	bottom: 120px;
+}
+
+.user-chat-box .mssg-box {
+	width: 500px;
+	height: 120px;
+	background: #FFFFFF;
+	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
+	border-radius: 20px;
+	padding-left: 1em;
+	border: none;
+}
+
+.user-chat-box .submit-message {
+	background: linear-gradient(180deg, #ce2457 0%, #ff9b54 98.23%);
+	box-shadow: 2.6735px 2.6735px 4.01024px rgba(79, 0, 11, 0.25);
+	border-radius: 20px;
+	width: 100px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+	color: #fff;
+	position: relative;
+	bottom: 55px;
+    right: -382px;
+}
+
+.user-chat-box .submit-message p {
+	margin: auto 0.8em;
+}
+
 .swipe-container {
 	display: flex;
 	justify-content: center;
