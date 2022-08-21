@@ -14,7 +14,7 @@ Frameworks: Bootstrap, React
 Back-end Service: Firebase(Authentication, database)
 
 # How Does it Work?
-Thw user will be greeted with the a landing page that sucessfully adverties Grouper. 
+Thw user will be greeted with the a landing page that sucessfully adverties Grouper. The user can then click a get started button to register their account via Google. After registration is complete, the user is welcomed with an empty dashboard. In the top right corner, the user is able to create many different events. Once an event is added, it will appear in the user's dashboard. When the user clicks on their added event, it will lead them into a page, where it has an announcement tab welcoming those that joins the user event
 
 
 # Inspirations
