@@ -2,6 +2,7 @@ import { UserAuth } from "../context/AuthContext.js";
 import dropdownMenu from "../images/dropdown.png";
 import hamburgerMenu from "../images/HamburgerMenu.svg"
 import grouperNoArrow from "../images/grouperNav.png"
+import { motion } from "framer-motion";
 
 export default function Navbar() {
 
@@ -9,7 +10,7 @@ export default function Navbar() {
 
     return (
         <div className="navbar">
-            <img src={hamburgerMenu} alt="hamburgerMenu" />
+            <motion.img src={hamburgerMenu} alt="hamburgerMenu" whileHover={{ rotate: 90 }}/>
             <img src={grouperNoArrow} alt="logo" className="grouper-logo" />
             <div className="user">
                 <img src="" alt="profilepic" className="profile-pic"/>
