@@ -54,7 +54,7 @@ export default function Homepage() {
                         color="#FF9B54"
                     />
                     <Event 
-                        eventtitle="Finance Group Porject"
+                        eventtitle="Finance Group Project"
                         members=" 600"
                         description="Today’s industry is moving towards exciting changes. The goal of the project is to find intutive ways to help others become finacially literate and understand society."
                         logo={Business}
