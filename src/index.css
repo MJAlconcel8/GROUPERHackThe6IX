@@ -9,7 +9,7 @@
 }
 
 .wrapper {
-	height: 100vh;
+	height: 90vh;
 	overflow: none;
 }
 
@@ -119,7 +119,7 @@
 .blob2 {
 	position: absolute;
 	top: -94px;
-    right: 0;
+	right: 0;
 	z-index: -100;
 }
 
@@ -128,16 +128,140 @@
 	gap: 5px;
 }
 
+.landing-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
 .card-text {
 	font-weight: 400;
-    font-family: 'Nunito';
+	font-family: "Nunito";
 	font-size: 24;
-    color: #CE2457;
-    width: 200px;
+	color: #ce2457;
+	width: 200px;
 }
 
 .card-image{
     margin-top: 25px;
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 100px;
+	padding-bottom: 15px;
+	background: rgba(255, 255, 255, 0.01);
+	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
+}
+
+.user {
+	display: flex;
+}
+
+.dropdown {
+	height: 10px;
+}
+
+.profile-pic {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.homepage-content {
+	margin-left: 230px;
+	margin-right: 230px;
+	margin-top: 40px;
+}
+
+.enjoy {
+	color: #ce2457;
+	font-family: "Nunito";
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 34px;
+}
+
+.home-top-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.add-event {
+	display: flex;
+	align-items: center;
+	font-weight: 300;
+	font-size: 17px;
+	gap: 10px;
+	font-family: "Nunito";
+}
+
+.username {
+	font-family: "Nunito";
+	font-weight: 300;
+}
+
+.event-card {
+	font-family: "Nunito";
+	width: 500px;
+	height: 275px;
+	background: #ffffff;
+	border: 1px solid #d1d1d1;
+	box-shadow: 0px 4px 4px rgba(79, 0, 11, 0.25);
+	border-radius: 13px;
+}
+
+.card-top {
+	height: 130px;
+	width: 500px;
+	background: rgba(255, 136, 136, 0.92);
+	border-radius: 13px 13px 0px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-titles {
+	color: white;
+	margin-left: 20px;
+	padding-top: 55px;
+}
+
+.event-members {
+	font-size: 14px;
+}
+
+.event-title {
+	font-weight: 700;
+	font-size: 22px;
+}
+
+.event-logo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 15px;
+	margin-right: 45px;
+}
+
+.event-decription {
+	margin: 25px 30px;
+	width: 443px;
+}
+
+.events {
+	margin-top: 35px;
+}
+
+.icon-upload {
+	height: 145px;
+	width: 145px;
+	background: #e9e9e9;
+	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
 }
 
 .carousel .carousel-indicators button {

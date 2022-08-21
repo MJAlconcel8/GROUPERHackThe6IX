@@ -4,10 +4,32 @@ import blob2 from "../images/blob2.png"
 import arrow from "../images/arrow.svg"
 import grouperText from "../images/GROUPER.png"
 import { motion } from "framer-motion";
-import bunchofpeople from "../images/bunchofpeople.png";
+import bunchofpeople from "../images/bunchofpeople.png"
+import { UserAuth } from "../context/AuthContext.js";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom" 
 
 export default function Landing() {
+    
+    const { googleSignIn, user } = UserAuth();
     const contentA = ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, aut!", "hi", "ok"];
+    const navigate = useNavigate();
+
+    const handleGoogleSignIn = async () => {
+        try {
+            await googleSignIn();
+            console.log(user);
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        if (user != null) {
+            navigate('/homepage');
+            console.log(user);
+        }
+    }, [user]);
 
     return (
         <div className="wrapper">
@@ -24,6 +46,7 @@ export default function Landing() {
                 <motion.div 
                     className="get-start-button"
                     whileHover={{ scale: 1.2 }}
+                    onClick={handleGoogleSignIn}
                 >
                     <div className="get-started-button-content">
                         <p className="get-start-but-text">GET STARTED</p>
