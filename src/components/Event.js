@@ -2,9 +2,11 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 
-export default function Event() {
+export default function Event(props) {
 
     const navigate = useNavigate();
+
+    
 
     function handleClick() {
         console.log("CLICK!");
@@ -16,8 +18,8 @@ export default function Event() {
 
             <div className="card-top">
                 <div className="card-titles">
-                    <h3 className="event-title">Hack The 6ix</h3>
-                    <h4 className="event-members">880 members</h4>
+                    <h3 className="event-title">{props.eventtitle}</h3>
+                    <h4 className="event-members">{props.members} members</h4>
                 </div>
                 <div className="event-logo" style={{ backgroundImage: `url("https://via.placeholder.com/500")` }} ></div>
             </div>

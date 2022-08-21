@@ -36,7 +36,12 @@ export default function Homepage() {
                     </motion.div>
                 </div>
                 <div className="events">
-                    <Event />
+                    <Event 
+                        eventtitle="Hack The 6ix"
+                        members="880"
+                        description="Come join this fantastic 36 hour long event to test or aquire a new programming skill or framework in a motivating and focused setting."
+                        logo=""
+                    />
                 </div>
             </div>
         </>

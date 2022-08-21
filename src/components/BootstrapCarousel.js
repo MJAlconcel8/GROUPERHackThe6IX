@@ -3,7 +3,7 @@ import groupedpeople from "../images/grouped_people_icon.png";
 import lettericon from "../images/letter_person_icon.png";
 import teamworkicon from "../images/teamwork_icon.png";
 
-export default function BootstrapCarousel() {
+export default function BootstrapCarousel(props) {
   return (
     <div>
       <Carousel>
@@ -14,7 +14,7 @@ export default function BootstrapCarousel() {
             className="d-block fluid px-4"
           />
           <Carousel.Caption>
-            <p>The first groupmaking platform featuring swipe technology. Form a group with attendees.</p>
+            <p>{props.content[0]}</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
@@ -24,7 +24,7 @@ export default function BootstrapCarousel() {
             className="d-block fluid px-4"
           />
           <Carousel.Caption>
-            <p>Automatically generate and switch between different networking profiles.</p>
+            <p>{props.content[1]}</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
@@ -35,7 +35,7 @@ export default function BootstrapCarousel() {
           />
           <Carousel.Caption>
             <p>
-              Swipe through and make your dream groupie. Connect, chat, and expand your network.
+              {props.content[2]}
             </p>
           </Carousel.Caption>
         </Carousel.Item>
