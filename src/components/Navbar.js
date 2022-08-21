@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import DropdownMenu from "./DropdownMenu"
 
-export default function Navbar() {
+export default function Navbar(props) {
 
     const { user } = UserAuth();
     const [displayDropdown, setDisplayDropdown] = useState(false);
@@ -25,7 +25,7 @@ export default function Navbar() {
                 <img src={dropdownMenu} alt="dropdownMenu" className="dropdown" onClick={handleDropdownClick} />
             </div>
             <div className="dropdown-menuu">
-                {displayDropdown && <DropdownMenu />}
+                {displayDropdown && <DropdownMenu activate={props.activate}/>}
             </div>
         </div>
     )

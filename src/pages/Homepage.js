@@ -8,12 +8,18 @@ import { useNavigate } from "react-router-dom"
 import Computer from "../images/Ellipse2.png"
 import Gaming from "../images/Ellipse6.png"
 import Business from "../images/Ellipse4.png"
+import Teamwork from "../images/Ellipse5.png"
+import { useState } from "react";
 
 export default function Homepage() {
 
     const { logOut, user } = UserAuth();
+    const [ displayClass, setDisplayClass ] = useState(false);
     const navigate = useNavigate();
 
+    function createNewClass() {
+        setDisplayClass(prevState => !prevState);
+    }
 
     const handleSignOut = async () => {
         try {
@@ -29,7 +35,7 @@ export default function Homepage() {
 
     return (
         <>
-            <Navbar />
+            <Navbar activate={createNewClass}/>
             <div className="homepage-content">
                 <div className="home-top-row">
                     <h1 onClick={handleSignOut} className="enjoy">Enjoy Your Social Interactions With Grouper!</h1>
@@ -56,10 +62,17 @@ export default function Homepage() {
                     <Event 
                         eventtitle="Finance Group Project"
                         members=" 600"
-                        description="Today\’s industry is moving towards exciting changes. The goal of the project is to find intuitive ways to help others become financially literate and understand society."
+                        description="Today’s industry is moving towards exciting changes. The goal of the project is to find intuitive ways to help others become financially literate and understand society."
                         logo={Business}
                         color="#CE2457"
                     />
+                    {displayClass && <Event 
+                        eventtitle="Team On 3"
+                        members=" 400"
+                        description="Team on 3 is a program that was invented to widen the capacity amongst individuals into developing and honing skills to make them leaders in this world."
+                        logo={Teamwork}
+                        color="#720026"
+                    />}
                 </div>
             </div>
         </>
