@@ -1,3 +1,6 @@
+/* -------------------------
+----- GLOBAL STYLES -------- 
+------------------------- */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -57,6 +60,9 @@
 	z-index: -50;
 }
 
+/* -------------------------
+----- LANDING PAGE --------- 
+------------------------- */
 .get-start-button {
 	background: linear-gradient(180deg, #ce2457 0%, #ff9b54 98.23%);
 	box-shadow: 2.6735px 2.6735px 4.01024px rgba(79, 0, 11, 0.25);
@@ -89,6 +95,11 @@
 	border-radius: 13.4498px;
 	width: 385px;
 	height: 250px;
+	display: block;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	color: #720026;
 }
 
 .cards {
@@ -133,24 +144,28 @@
 	width: 200px;
 }
 
-.card-image {
-	margin-top: 25px;
+.card-image{
+    margin-top: 25px;
 }
 
 .navbar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 20px;
-	padding-left: 50px;
-	padding-right: 100px;
-	padding-bottom: 15px;
+	padding: 20px 50px 15px;
 	background: rgba(255, 255, 255, 0.01);
 	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
 }
 
+.grouper-logo {
+	margin-left: 8em;
+}
+
 .user {
 	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-right: -13em;
 }
 
 .dropdown {
@@ -192,9 +207,14 @@
 	font-family: "Nunito";
 }
 
+.add-event-text {
+	margin: 0;
+}
+
 .username {
 	font-family: "Nunito";
 	font-weight: 300;
+	margin: auto 0.8em;
 }
 
 .event-card {
@@ -210,7 +230,6 @@
 .card-top {
 	height: 130px;
 	width: 500px;
-	background: rgba(255, 136, 136, 0.92);
 	border-radius: 13px 13px 0px 0px;
 	display: flex;
 	justify-content: space-between;
@@ -218,7 +237,7 @@
 
 .card-titles {
 	color: white;
-	margin-left: 20px;
+	margin-left: 30px;
 	padding-top: 55px;
 }
 
@@ -232,8 +251,8 @@
 }
 
 .event-logo {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
 	margin-top: 15px;
 	margin-right: 45px;
@@ -433,4 +452,72 @@
 
 .submit-event-button p {
 	margin: auto 0.8em;
+=======
+.dropdown-menuu {
+	position: relative;
+	display: inline-block;
+
+}
+
+.dropdownMenu {
+	position: absolute;
+	top: 50px;
+	right: 120px;
+	background-color: #FF9042;
+	color: white;
+	width: 165px;
+	height: 100px;
+	border-radius: 10px;
+	text-align: center;
+	margin-right: 60px;
+	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
+}
+
+.dropdownMenu p {
+	margin-top: 1em;
+}
+
+.carousel .carousel-indicators button {
+	background-color: #CE2457;
+}
+
+.carousel .carousel-caption {
+	color: #CE2457;
+	line-height: 1.2em;
+	font-size: 1.1em;
+	padding: 0.5em;
+}
+
+.dropdown-item:hover {
+	color:#CE2457;
+	cursor: pointer;
+}
+
+.hack-content {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.back-button {
+	position: absolute;
+	left: 150px;
+	top: 150px;
+}
+
+.hack-blocks {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.second-column-groupie {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+img {
+	cursor: pointer;
 }
