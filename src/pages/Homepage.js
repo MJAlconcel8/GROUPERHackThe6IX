@@ -38,7 +38,7 @@ export default function Homepage() {
             <Navbar activate={createNewClass}/>
             <div className="homepage-content">
                 <div className="home-top-row">
-                    <h1 onClick={handleSignOut} className="enjoy">Enjoy Your Social Interactions With Grouper!</h1>
+                    <h1 className="enjoy">Enjoy Your Social Interactions With Grouper!</h1>
                     <motion.div className="add-event" whileHover={{ scale: 1.1 }} onClick={handleAddNewEventClick}>
                         <img src={plusButton} alt="addButton" />
                         <p className="add-event-text">Add an event</p>
