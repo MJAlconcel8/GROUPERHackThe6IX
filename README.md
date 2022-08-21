@@ -15,6 +15,9 @@ The inspiration we got from making this project was contributed to the group for
 
 # Screenshots
 ![Screenshot (30)](https://user-images.githubusercontent.com/109438699/185785261-50745104-2ea8-46d0-a7ec-4767c0d7422d.png)
+![Screenshot (31)](https://user-images.githubusercontent.com/109438699/185785417-90c0a89a-c3db-4560-9bd7-b224b3395bc2.png)
+
+
 
 
 
