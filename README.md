@@ -6,8 +6,11 @@ The purpose of the project is to allow people to form a team and network with ot
 
 # How Project Was Built? 
 Languages: Html, CSS, and Javascript
+
 Environment: Node.js
+
 Frameworks: Bootstrap, React
+
 Back-end Service: Firebase(Authentication, database)
 
 # How Does it Work?
