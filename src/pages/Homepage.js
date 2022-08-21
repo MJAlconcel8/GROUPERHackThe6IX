@@ -1,11 +1,9 @@
 
-
 import { UserAuth } from "../context/AuthContext";
 import Navbar from "../components/Navbar";
 import plusButton from "../images/addButton.png";
 import Event from "../components/Event"
 import { motion } from "framer-motion";
-
 
 export default function Homepage() {
 

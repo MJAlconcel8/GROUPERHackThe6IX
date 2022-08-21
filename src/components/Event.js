@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
+
 export default function Event() {
 
     const navigate = useNavigate();
@@ -10,7 +11,9 @@ export default function Event() {
     }
 
     return (
+
         <motion.div className="event-card" onClick={handleClick} whileHover={{ scale: 1.1 }}>
+
             <div className="card-top">
                 <div className="card-titles">
                     <h3 className="event-title">Hack The 6ix</h3>
@@ -20,6 +23,7 @@ export default function Event() {
             </div>
             <div className="event-decription">Come join this fantastic 36 hour long event to test or aquire a new programming skill or framework in a motivating and focused setting.</div>
         </motion.div >
+
     )
 
 }
