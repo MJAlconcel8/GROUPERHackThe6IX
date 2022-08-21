@@ -1,6 +1,10 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+<<<<<<< Updated upstream
+=======
+import { getFirestore, collection, getDocs, doc } from 'firebase/firestore';
+>>>>>>> Stashed changes
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -15,6 +19,22 @@ const firebaseConfig = {
   appId: "1:916416097895:web:5838bbc3ba57851f62aec2"
 };
 
+const app = initializeApp(firebaseConfig);
 // Initialize Firebase
+<<<<<<< Updated upstream
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+=======
+const db = getFirestore()
+export const colRef = collection(db, 'events');
+
+export const auth = getAuth(app);
+getDocs(colRef)
+  .then((snapshot) =>{
+    let events = []
+    snapshot.docs.forEach((doc) => {
+      events.push({...doc.data(), id: doc.id})
+    })
+    return events
+  })
+>>>>>>> Stashed changes
