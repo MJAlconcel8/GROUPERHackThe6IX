@@ -12,7 +12,16 @@ import { useNavigate } from "react-router-dom"
 export default function Landing() {
     
     const { googleSignIn, user } = UserAuth();
-    const contentA = ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, aut!", "hi", "ok"];
+    const contentA = ["The first groupmaking platform featuring swipe technology. Form a group with attendees.", 
+                        "Automatically generate and switch between different networking profiles.", 
+                        "Swipe through and make your dream groupie. Connect, chat, and expand your network."];
+    const contentB = ["Bring people together quicker for large gatherings, like hackathons, networking events, and more.", 
+                      "Use the Auto-Assign feature to group anyone who hasn't found a team by the end date.", 
+                      "Create an event, share announcements, and invite attendees to start collaborating!"];
+    const contentC = ["Create balanced teams to allow students to finish the impossible school projects.", 
+                      "Make fair groups based on each individual students' strengths and weaknesses.", 
+                      "Assemble your class in a fun way. Connect, chat, and expand your network today."];
+
     const navigate = useNavigate();
 
     const handleGoogleSignIn = async () => {
@@ -55,16 +64,13 @@ export default function Landing() {
                 </motion.div>
                 <div className="cards">
                     <LandingCard
-                        graphic={bunchofpeople}
                         content={contentA}
                     />
                     <LandingCard
-                        graphic={bunchofpeople}
-                        content={contentA}
+                        content={contentB}
                     />
                     <LandingCard
-                        graphic={bunchofpeople}
-                        content={contentA}
+                        content={contentC}
                     />
                 </div>
             </div>
