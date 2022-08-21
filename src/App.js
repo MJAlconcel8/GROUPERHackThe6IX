@@ -14,7 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/homepage" element={<Protected ><Homepage /></Protected>} />
-            <Route path="/eventcreate" element={<EventForm />} />
+            <Route path="/createevent" element={<EventForm />} />
           </Routes>
         </AuthContextProvider >
       </BrowserRouter>
