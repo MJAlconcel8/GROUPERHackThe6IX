@@ -1,6 +1,7 @@
 import { UserAuth } from "../context/AuthContext";
 import Navbar from "../components/Navbar";
 import plusButton from "../images/addButton.png";
+import Event from "../components/Event"
 
 export default function Homepage() {
 
@@ -25,7 +26,9 @@ export default function Homepage() {
                         <p className="add-event-text">Add an event</p>
                     </div>
                 </div>
-
+                <div className="events">
+                    <Event />
+                </div>
             </div>
         </>
 
