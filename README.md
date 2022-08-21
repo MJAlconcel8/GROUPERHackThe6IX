@@ -5,8 +5,18 @@ Our group decided to make a web application called "Grouper."
 The purpose of the project is to allow people to form a team and network with other people based on similar personalities, characteristics, and experiences in life. Many people in society find it difficult to have social interactions with others due to many barriers such as location or compatibility. Grouper will definitely allow the user to find someone that matches their likes and interests which in turn, will create those connections that every human being needs.
 
 # How Project Was Built? 
+Languages: Html, CSS, and Javascript
+
+Environment: Node.js
+
+Frameworks: Bootstrap, React
+
+Back-end Service: Firebase(Authentication, database)
 
 # How Does it Work?
+Thw user will be greeted with the a landing page that sucessfully adverties Grouper. The user can then click a get started button to register their account via Google. After registration is complete, the user is welcomed with an empty dashboard. In the top right corner, the user is able to join many different events. Once an event is added, it will appear in the user's dashboard. When the user clicks on their added event, it will lead them into a page, where it has an announcement tab to keep them update on the event, a button to find a group or in Grouper terminology "Groupe", and a tab that shows what "Groupes" they are in. User's can form their "Groupe", by swiping right as potential canitadtes or left as non potenial canidates. 
+
+The user can also create an event as an adminstrator   
 
 
 # Inspirations
