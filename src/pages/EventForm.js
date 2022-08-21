@@ -2,9 +2,18 @@ import backArrow from "../images/icon-park-outline_return.png"
 import iconShuffle from "../images/IconShuffle.png"
 import penIcon from "../images/PenIcon.png"
 import sideImg from "../images/StockTeamwork.png"
+import { motion } from "framer-motion"
+import { useState } from "react"
 
 export default function EventForm() {
 
+    const [logo, setLogo] = useState(iconShuffle);
+    const [count, setCount] = useState(0);
+
+    function handleClick() {
+        setCount(count => count+1)
+        count%2 ? setLogo("https://source.unsplash.com/random") : setLogo("https://source.unsplash.com/user/wsanter")
+    }
 
     return (
         <div className="cre-event-container">
@@ -24,7 +33,7 @@ export default function EventForm() {
                         <input className="max-members" type="number" />
                     </div>
                     <div className="icon-upload">
-                        <img src={iconShuffle} alt="icon-shuffle-button" />
+                        <motion.img src={logo} className="icon-random" alt="icon-shuffle-button" whileHover={{scale: 1.05}} onClick={handleClick}/>
                     </div>
                     <div className="event-description-box">
                         <h4 className="form-header">Event Description</h4>

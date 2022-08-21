@@ -18,7 +18,7 @@ export default function Hackpage() {
             <div className="hack-blocks">
                 <img src={AnnouncementBlock} alt="" />
                 <div className="second-column-groupie">
-                    <motion.img src={FindGroupieBut} alt="" whileHover={{ scale: 1.025 }}/>
+                    <motion.img src={FindGroupieBut} alt="" className="find-g-but" whileHover={{ scale: 1.025 }}/>
                     <img src={MatchedGroupiesBlock} alt="" />
                 </div>
             </div>

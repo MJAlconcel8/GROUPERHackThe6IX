@@ -452,7 +452,8 @@
 
 .submit-event-button p {
 	margin: auto 0.8em;
-=======
+}
+
 .dropdown-menuu {
 	position: relative;
 	display: inline-block;
@@ -520,4 +521,9 @@
 
 img {
 	cursor: pointer;
+}
+
+.icon-random {
+	height: 151px;
+	width: 151px;
 }
