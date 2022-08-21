@@ -161,3 +161,37 @@
 	width: 50px;
 	border-radius: 50%;
 }
+
+.homepage-content {
+	margin-left: 230px;
+	margin-right: 230px;
+	margin-top: 40px;
+}
+
+.enjoy {
+	color: #ce2457;
+	font-family: "Nunito";
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 34px;
+}
+
+.home-top-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.add-event {
+	display: flex;
+	align-items: center;
+	font-weight: 300;
+	font-size: 17px;
+	gap: 10px;
+	font-family: "Nunito";
+}
+
+.username {
+	font-family: 'Nunito';
+	font-weight: 300;
+}

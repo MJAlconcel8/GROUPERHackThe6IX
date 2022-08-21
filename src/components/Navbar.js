@@ -12,8 +12,8 @@ export default function Navbar() {
             <img src={hamburgerMenu} alt="hamburgerMenu" />
             <img src={grouperNoArrow} alt="logo" className="grouper-logo" />
             <div className="user">
-                <img src="" alt="profilepic" className="profile-pic"/>
-                <p className="username">Jason Yang</p>
+                <img src={user.photoURL} alt="profilepic" className="profile-pic"/>
+                <p className="username">{user.displayName}</p>
                 <img src={dropdownMenu} alt="dropdownMenu" className="dropdown" />
             </div>
         </div>
