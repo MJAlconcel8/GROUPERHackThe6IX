@@ -229,7 +229,6 @@
 .card-top {
 	height: 130px;
 	width: 500px;
-	background: rgba(255, 136, 136, 0.92);
 	border-radius: 13px 13px 0px 0px;
 	display: flex;
 	justify-content: space-between;
@@ -251,8 +250,8 @@
 }
 
 .event-logo {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
 	margin-top: 15px;
 	margin-right: 45px;
