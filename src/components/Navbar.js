@@ -14,13 +14,14 @@ export default function Navbar() {
         setDisplayDropdown(prevDisplayDropdown => !prevDisplayDropdown);
     }
 
+
     return (
         <div className="navbar">
             <motion.img src={hamburgerMenu} alt="hamburgerMenu" whileHover={{ rotate: 90 }} />
             <img src={grouperNoArrow} alt="logo" className="grouper-logo" />
             <div className="user">
-                <img src={user.photoURL} alt="profilepic" className="profile-pic" />
-                <p className="username">{user.displayName}</p>
+                <img src={user.photoURL} alt="profilepic" className="profile-pic" onClick={handleDropdownClick} />
+                <p className="username" onClick={handleDropdownClick} >{user.displayName}</p>
                 <img src={dropdownMenu} alt="dropdownMenu" className="dropdown" onClick={handleDropdownClick} />
             </div>
             <div className="dropdown-menuu">

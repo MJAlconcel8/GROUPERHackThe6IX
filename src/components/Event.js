@@ -10,6 +10,7 @@ export default function Event(props) {
 
     function handleClick() {
         console.log("CLICK!");
+        navigate('/Hackthe6ix');
     }
 
     return (
