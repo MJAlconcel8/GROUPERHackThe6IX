@@ -2,7 +2,7 @@
 import { UserAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
-export default function DropdownMenu() {
+export default function DropdownMenu(props) {
 
     const { logOut, user } = UserAuth();
 
@@ -16,7 +16,8 @@ export default function DropdownMenu() {
 
     function handleJoinEvent() {
         prompt("Enter your event code");
-        alert("Succesfully Joined Event: Team on 3!");
+        alert("Success! Joined Event: Team on 3!");
+        props.activate()
     }
 
     return (
