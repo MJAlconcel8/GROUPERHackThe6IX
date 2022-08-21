@@ -7,12 +7,14 @@ import grouperText from "../images/GROUPER.png"
 import { motion } from "framer-motion";
 import bunchofpeople from "../images/bunchofpeople.png"
 import { UserAuth } from "../context/AuthContext.js";
-
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom" 
 
 export default function Landing() {
     
-    const { googleSignIn } = UserAuth();
+    const { googleSignIn, user } = UserAuth();
     const contentA = ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, aut!", "hi", "ok"];
+    const navigate = useNavigate();
 
     const handleGoogleSignIn = async () => {
         try {
@@ -21,6 +23,13 @@ export default function Landing() {
             console.log(error)
         }
     }
+
+    useEffect(() => {
+        if (user != null) {
+            navigate('/homepage');
+        }
+    }, [user]);
+
     return (
         <>
             <div className="gradient-container"></div>
