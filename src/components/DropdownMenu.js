@@ -14,13 +14,18 @@ export default function DropdownMenu() {
         }
     }
 
+    function handleJoinEvent() {
+        prompt("Enter your event code");
+        alert("Succesfully Joined Event: Team on 3!");
+    }
+
     return (
         <div className="dropdownMenu">
             <div className="dropdown-item">
                 <p className="logout" onClick={handleSignOut}>Log Out</p>
             </div>
             <div className="dropdown-item">
-                <p className="settings" >Join an Event</p>
+                <p className="settings" onClick={handleJoinEvent} >Join an Event</p>
             </div>
         </div>
     )
