@@ -159,8 +159,14 @@
 	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
 }
 
+.grouper-logo {
+	margin-left: 8em;
+}
+
 .user {
 	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .dropdown {
@@ -205,6 +211,7 @@
 .username {
 	font-family: "Nunito";
 	font-weight: 300;
+	margin: auto 0.8em;
 }
 
 .event-card {
@@ -228,7 +235,7 @@
 
 .card-titles {
 	color: white;
-	margin-left: 20px;
+	margin-left: 30px;
 	padding-top: 55px;
 }
 
@@ -249,7 +256,7 @@
 	margin-right: 45px;
 }
 
-.event-decription {
+.event-description {
 	margin: 25px 30px;
 	width: 443px;
 }
