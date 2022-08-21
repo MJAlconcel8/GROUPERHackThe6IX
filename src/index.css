@@ -264,6 +264,15 @@
 	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
 }
 
+.dropdown-menu {
+	position: absolute;
+}
+
+.dropdownMenu {
+	background-color: #FF9042;
+	width: 145px;
+	height: 100px;
+
 .carousel .carousel-indicators button {
 	background-color: #CE2457;
 }
