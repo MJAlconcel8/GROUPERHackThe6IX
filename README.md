@@ -14,14 +14,14 @@ Frameworks: Bootstrap, React
 Back-end Service: Firebase(Authentication, database)
 
 # How Does it Work?
-Thw user will be greeted with the a landing page that sucessfully adverties Grouper. The user can then click a get started button to register their account via Google. After registration is complete, the user is welcomed with an empty dashboard. In the top right corner, the user is able to join many different events. Once an event is added, it will appear in the user's dashboard. When the user clicks on their added event, it will lead them into a page, where it has an announcement tab to keep them update on the event, a button to find a group or in Grouper terminology "Groupe", and a tab that shows what "Groupes" they are in. User's can form their "Groupe", by swiping right as potential canitadtes or left as non potenial canidates. 
-
-The user can also create an event as an adminstrator   
+Thw user will be greeted with the a landing page that sucessfully adverties Grouper. The user can then click a get started button to register their account via Google. After registration is complete, the user is welcomed with an empty dashboard. In the top right corner, the user is able to join many different events. Once an event is added, it will appear in the user's dashboard. When the user clicks on their added event, it will lead them into a page, where it has an announcement tab to keep them update on the event, a button to find a group or in Grouper terminology "Groupe", and a tab that shows what "Groupes" they are in. User's can form their "Groupe", by swiping right as a match or left as not a match. The user can see whether they mesh with the person, as their is a breif description of what the person is like. If the user found a match, they can talk to the person, to make further decided if they want to be in a "Groupe." The user can also create an event as an adminstrator. As adminstrator, the user can name the event, set a duration for the event, colour background, and their is a feature that auto groups people together. There is also a setting page that allows the user to update their personal information such as name, last name, username, password, and notification settings.      
 
 
 # Inspirations
 The inspiration we got from making this project was contributed to the group formation from Hackthe6ix. As this event was for the most part online, it was difficult for many individuals to find a team that met their hackathon team expectations. There are many hackers who are beginners and wanted people with around the same experience as them. There were others who participated in many hackathons and wanted group members with plenty of experience. With Grouper, the team formation problem would not exist, as the individual could filter what they prioritize in an ideal teammate and create their dream team to win Hackthe6ix.
 
+# Figma Link
+https://www.figma.com/file/T7henoySPSp637TOdNfO28/Grouper?node-id=0%3A1
 
 # Screenshots
 ![Screenshot (30)](https://user-images.githubusercontent.com/109438699/185785261-50745104-2ea8-46d0-a7ec-4767c0d7422d.png)
