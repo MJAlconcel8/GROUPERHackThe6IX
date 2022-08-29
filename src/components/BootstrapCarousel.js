@@ -17,7 +17,7 @@ export default function BootstrapCarousel(props) {
             <p>{props.content[0]}</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={5000}>
+        <Carousel.Item interval={5500}>
           <img
             src={lettericon}
             alt="Icon"
@@ -27,7 +27,7 @@ export default function BootstrapCarousel(props) {
             <p>{props.content[1]}</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={5000}>
+        <Carousel.Item interval={6000}>
           <img
             src={teamworkicon}
             alt="Icon"

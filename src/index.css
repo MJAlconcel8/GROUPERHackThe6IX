@@ -1,6 +1,6 @@
-/* -------------------------
------ GLOBAL STYLES -------- 
-------------------------- */
+/* ---------------------------------
+---------- GLOBAL STYLES ----------- 
+--------------------------------- */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -25,6 +25,13 @@
 	);
 }
 
+img {
+	cursor: pointer;
+}
+
+/* ---------------------------------
+---------- TYPOGRAPHY -------------- 
+--------------------------------- */
 .main-text {
 	margin-top: 150px;
 	font-family: "Open Sans";
@@ -47,22 +54,13 @@
 	margin: 35px 0 0 35px;
 }
 
-.gradient-container {
-	position: fixed;
-	bottom: 0px;
-	background: linear-gradient(
-		180deg,
-		rgba(217, 217, 217, 0) 0%,
-		rgba(245, 201, 169, 0.54) 75.83%
-	);
-	height: 190px;
-	width: 100%;
-	z-index: -50;
+.red {
+	color: #CE2457;
 }
 
-/* -------------------------
------ LANDING PAGE --------- 
-------------------------- */
+/* ---------------------------------
+---------- LANDING PAGE ------------ 
+--------------------------------- */
 .get-start-button {
 	background: linear-gradient(180deg, #ce2457 0%, #ff9b54 98.23%);
 	box-shadow: 2.6735px 2.6735px 4.01024px rgba(79, 0, 11, 0.25);
@@ -129,13 +127,6 @@
 	gap: 5px;
 }
 
-.landing-card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 20px;
-}
-
 .card-text {
 	font-weight: 400;
 	font-family: "Nunito";
@@ -148,6 +139,34 @@
     margin-top: 25px;
 }
 
+.gradient-container {
+	position: fixed;
+	bottom: 0px;
+	background: linear-gradient(
+		180deg,
+		rgba(217, 217, 217, 0) 0%,
+		rgba(245, 201, 169, 0.54) 75.83%
+	);
+	height: 190px;
+	width: 100%;
+	z-index: -50;
+}
+
+/* ------ BS CAROUSEL SLIDER -------- */
+.carousel .carousel-indicators button {
+	background-color: #CE2457;
+}
+
+.carousel .carousel-caption {
+	color: #CE2457;
+	line-height: 1.2em;
+	font-size: 1.1em;
+	padding: 0.5em;
+}
+
+/* ---------------------------------
+---------- NAVIGATION BAR ---------- 
+--------------------------------- */
 .navbar {
 	display: flex;
 	align-items: center;
@@ -168,20 +187,65 @@
 	margin-right: -13em;
 }
 
-.dropdown {
-	height: 10px;
-}
-
 .profile-pic {
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
 }
 
+.username {
+	font-family: "Nunito";
+	font-weight: 300;
+	margin: auto 0.8em;
+	cursor: pointer;
+}
+
+/* ------ DROPDOWN MENU ---------- */
+.dropdown {
+	height: 10px;
+}
+
+.dropdown-menuu {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdownMenu {
+	position: absolute;
+	top: 50px;
+	right: 120px;
+	background-color: #FF9042;
+	color: white;
+	width: 165px;
+	height: 100px;
+	border-radius: 10px;
+	text-align: center;
+	margin-right: 60px;
+	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
+}
+
+.dropdownMenu p {
+	margin-top: 1em;
+}
+
+.dropdown-item:hover {
+	color:#CE2457;
+	cursor: pointer;
+}
+
+/* ---------------------------------
+---------- HOMEPAGE ---------------- 
+--------------------------------- */
 .homepage-content {
 	margin-left: 230px;
 	margin-right: 230px;
 	margin-top: 40px;
+}
+
+.home-top-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .enjoy {
@@ -190,12 +254,6 @@
 	font-weight: 500;
 	font-size: 25px;
 	line-height: 34px;
-}
-
-.home-top-row {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .add-event {
@@ -211,13 +269,17 @@
 	margin: 0;
 }
 
-.username {
-	font-family: "Nunito";
-	font-weight: 300;
-	margin: auto 0.8em;
-	cursor: pointer;
+.events {
+	margin-top: 35px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 25px 25px;
 }
 
+/* ---------------------------------
+---------- EVENT CARD -------------- 
+--------------------------------- */
 .event-card {
 	font-family: "Nunito";
 	width: 500px;
@@ -226,6 +288,7 @@
 	border: 1px solid #d1d1d1;
 	box-shadow: 0px 4px 4px rgba(79, 0, 11, 0.25);
 	border-radius: 13px;
+	cursor: pointer;
 }
 
 .card-top {
@@ -251,12 +314,11 @@
 	font-size: 22px;
 }
 
-.event-logo {
-	width: 80px;
-	height: 80px;
+.events-logo {
+	width: 6.125em;
+	height: 6.125em;
+	margin: 18px 38px 18px auto;
 	border-radius: 50%;
-	margin-top: 15px;
-	margin-right: 45px;
 }
 
 .event-description {
@@ -264,24 +326,9 @@
 	width: 443px;
 }
 
-.events {
-	margin-top: 35px;
-}
-
-.icon-upload {
-	height: 145px;
-	width: 145px;
-	background: #e9e9e9;
-	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
-}
-
-/* ------------------------
------- CREATE EVENT -------
------------------------- */
-.red {
-	color: #CE2457;
-}
-
+/* ---------------------------------
+-------- CREATE EVENT FORM --------- 
+--------------------------------- */
 .cre-event-container {
 	display: grid;
 	grid-template-columns: 250px auto 481px;
@@ -299,6 +346,9 @@
 .back-button {
 	display: flex;
 	align-items: center;
+	position: absolute;
+	left: 150px;
+	top: 150px;
 }
 
 .back-button p {
@@ -313,7 +363,6 @@
 .cre-event-deets {
 	display: grid;
 	grid-template-columns: 400px auto 145px;
-	/* 580px wide 315px tall */
 	grid-template-rows: 60px auto 125px;
 	grid-template-areas: 
 		"eventname space picture"
@@ -362,7 +411,16 @@
 }
 
 .icon-upload {
+	height: 145px;
+	width: 145px;
+	background: #e9e9e9;
+	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
 	grid-area: picture;
+}
+
+.icon-random {
+	height: 151px;
+	width: 151px;
 }
 
 .event-description-box {
@@ -433,11 +491,6 @@
 	margin-right: 0.8em;
 }
 
-.side-bnr-img {
-	grid-area: banner;
-    z-index: -100;
-}
-
 .submit-event-button {
 	background: linear-gradient(180deg, #ce2457 0%, #ff9b54 98.23%);
 	box-shadow: 2.6735px 2.6735px 4.01024px rgba(79, 0, 11, 0.25);
@@ -455,55 +508,18 @@
 	margin: auto 0.8em;
 }
 
-.dropdown-menuu {
-	position: relative;
-	display: inline-block;
+.side-bnr-img {
+	grid-area: banner;
+    z-index: -100;
 }
 
-.dropdownMenu {
-	position: absolute;
-	top: 50px;
-	right: 120px;
-	background-color: #FF9042;
-	color: white;
-	width: 165px;
-	height: 100px;
-	border-radius: 10px;
-	text-align: center;
-	margin-right: 60px;
-	box-shadow: 2px 2px 3px rgba(79, 0, 11, 0.25);
-}
-
-.dropdownMenu p {
-	margin-top: 1em;
-}
-
-.carousel .carousel-indicators button {
-	background-color: #CE2457;
-}
-
-.carousel .carousel-caption {
-	color: #CE2457;
-	line-height: 1.2em;
-	font-size: 1.1em;
-	padding: 0.5em;
-}
-
-.dropdown-item:hover {
-	color:#CE2457;
-	cursor: pointer;
-}
-
+/* ---------------------------------
+------- HACKTHE6IX EVENT PAGE ------ 
+--------------------------------- */
 .hack-content {
 	display: flex;
 	width: 100%;
 	justify-content: center;
-}
-
-.back-button {
-	position: absolute;
-	left: 150px;
-	top: 150px;
 }
 
 .hack-blocks {
@@ -519,32 +535,9 @@
 	gap: 10px;
 }
 
-img {
-	cursor: pointer;
-}
-
-.events {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	gap: 25px 25px;
-}
-
-.events-logo {
-	width: 6.125em;
-	height: 6.125em;
-	margin: 18px 38px 18px auto;
-}
-
-.icon-random {
-	height: 151px;
-	width: 151px;
-}
-
-.event-card {
-	cursor: pointer;
-}
-
+/* ---------------------------------
+------- MATCHES CHAT PAGE ---------- 
+--------------------------------- */
 .matcheschat-content {
 	display: grid;
 	grid-template-columns: 250px 1fr 1fr 250px;
@@ -589,6 +582,7 @@ img {
 	margin: 0 0.25em 0 0;
 }
 
+/* ------ CHAT AREA -------------- */
 .chat-area {
 	grid-area: rightbody;
 	width: 578px;
@@ -665,6 +659,9 @@ img {
 	margin: auto 0.8em;
 }
 
+/* ---------------------------------
+----- SWIPE(Y)/FIND TEAM PAGE ------ 
+--------------------------------- */
 .swipe-container {
 	display: flex;
 	justify-content: center;
