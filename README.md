@@ -4,7 +4,7 @@ Our group decided to make a web application called "Grouper."
 # Purpose of Project
 The purpose of the project is to allow people to form a team and network with other people based on similar personalities, characteristics, and experiences in life. Many people in society find it difficult to have social interactions with others due to many barriers such as location or compatibility. Grouper will definitely allow the user to find someone that matches their likes and interests which in turn, will create those connections that every human being needs.
 
-# How Project Was Built? 
+# How Was the Project Built? 
 Languages: Html, CSS, and Javascript
 
 Environment: Node.js
